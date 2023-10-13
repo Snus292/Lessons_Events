@@ -1,0 +1,22 @@
+<script>
+    function f(){
+        var h1 = document.getElementById("header")
+        h1.style.color="red";
+    }
+
+    function g(c){
+        var h1 = document.getElementById("header")
+        h1.style.color=c;
+    }
+</script>
+<h1 id="header">Кнопка</h1>
+
+<button onclick="f()">Кнопка</button>
+<br>
+
+<select onchange="g(this.value)">
+    <option value="red"></option>
+    <option value="blue"></option>
+    <option value="green"></option>
+</select>
+<!--реализован -->
