@@ -59,6 +59,14 @@ function tableClick(){
 function reset(){
     gamer1 =true;
     gameTable = [[null,null,null],[null,null,null],[null,null,null]];
+    nullCount = 9 // кол во оставшихся ходов
+    winner = null;
+    var table = document.getElementsByClassName("inner-cell");
+    for (var i =0; i < table.length; i++){
+        table[i].innerText= "";
+
+    }
+    player.innerText= "Сучас ходит X";
 }
 
-// дописать нужно
+
